@@ -15,3 +15,6 @@ The bot template has separate models for shorting and longing. You can see it in
 This is not mandatory, You can just delete all the lines with `telegram_bot_sendtext("message")`. But it's a super nice feature. You will get automatic messages on Telegram about all the trades. Creating a telegram bot is quite easy, check out this: https://core.telegram.org/bots
 
 That's it!
+
+Other things to note:
+The db_creator.py assumes the model uses these technical indicators: adx, rsi and stoch. You can calculate your own techincal indicators from the price using this incredible pandas.ta https://github.com/twopirllc/pandas-ta
